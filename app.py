@@ -11,7 +11,7 @@ FIREBASE_URL = "https://hfmd-iot-system-default-rtdb.asia-southeast1.firebasedat
 
 # Kredential Roboflow anda
 ROBOFLOW_API_KEY = "NwFYMjnLg2zG5rk2F2dZ"
-ROBOFLOW_MODEL_ID = "hand-hfmd-3qdrq/1" 
+ROBOFLOW_MODEL_ID = "hand-hfmd-3qdrq/3" 
 
 # --- PAGE SETUP ---
 st.set_page_config(page_title="HFMD Detector FYP", layout="wide")
@@ -112,4 +112,5 @@ with col2:
 # --- AUTO REFRESH SETIAP 3 SAAT ---
 # Membolehkan data dari ESP32 sentiasa sync secara automatik
 time.sleep(3)
+
 st.rerun()
