@@ -96,7 +96,7 @@ with col2:
             with open(temp_filename, "wb") as f:
                 f.write(picture.getvalue())
 
-            prediction = model.predict(temp_filename, confidence=20, overlap=30).json()
+            prediction = model.predict(temp_filename, confidence=50, overlap=30).json()
             predictions_list = prediction['predictions']
             
             if len(predictions_list) > 0:
@@ -114,6 +114,7 @@ with col2:
 time.sleep(3)
 
 st.rerun()
+
 
 
 
